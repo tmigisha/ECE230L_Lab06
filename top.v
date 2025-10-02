@@ -20,14 +20,14 @@ module top (
     
     full_adder full_adder1_inst(
         .A(sw[4]),
-        .B(sw[5]),
+        .B(sw[6]),
         .Cin(0),
         .Y(led[3]),
         .Cout(c1)
     );
     
     full_adder full_adder2_inst(
-        .A(sw[6]),
+        .A(sw[5]),
         .B(sw[7]),
         .Cin(c1),
         .Y(led[4]),
@@ -36,3 +36,4 @@ module top (
 
 
 endmodule
+
